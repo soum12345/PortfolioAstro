@@ -5,88 +5,133 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Soumaya Seddiki</div>
   </div>
-
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     Étudiante en 2ème année de BUT informatique au sein de l'Université Paul Sabatier de Toulouse. 
+     Créative et débrouillarde, je saurai apporter de nouvelles idées aux projets qui me seront délégués pour le poste intégrateur web. 
+     Mes nombreux projets m'ont permis de développer mon esprit d'équipe et d'être polyvalente, ainsi, 
+     je réaliserai des missions pour l'entreprise. 
   </div>
+  <div class="mb-5">
+    <!-- Ajout du bouton de téléchargement ici -->
+    <a href="../public/CV_Soumaya-Seddiki.pdf" download class="btn btn-download"><input type="button" value="Télécharger mon CV" /></a>
+  </div>
+  </br>
+  <div class="divider my-0"></div>
+  </br>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+    <div class="text-3xl w-full font-bold">Experiences / Projects universitaires</div>
   </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
-
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Création d'une application pour Atelier Katanga"
+      subtitle="De 2022-2023 à [Atelier Katanga] à [Toulouse]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      - Création d'une bd pour le stockage des données de ventes sous <strong>MySQL (MLD, MCD)</strong></br>
+      - Maquettage de l’application sous Moqups</br>
+      - Développement d’un tableau de bord pour l’analyse de données en <strong>Python</strong> avec <strong>Streamlit</strong>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Création d'une application pour un client"
+      subtitle="De 2022-2023 à [Toulouse]"
+    >
+      - Création d'une bd pour la gestion de biens immobiliers sous <strong>OracleSQL (MLD, MCD)</strong></br>
+      - Création de fonctions/ procédures et triggers (PL/SQL)</br>
+      - Interface graphique en <strong>JAVA et JDBC</strong>
+
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Création de la base de données pour l'application de gestion des horaires de bus scolaire"
+      subtitle="De 2021-2022 à [Toulouse]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      - Cahier des charges (fonctions, évaluation, conditions)</br>
+      - Modélisation d'une bd <strong>(MLD, MCD)</strong></br>
+      - Wireframe de l’application sur <strong>Mockup</strong>
     </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+     <TimeLineElement
+      title="Développeuse web stagiaire"
+      subtitle="En 2019 à [Bordeaux]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      - Création d'une base de données avec JMerise <strong>(MCD, MLD)</strong></br>
+      - Requête <strong>MySQL</strong> sur <strong>phpMyAdmin</strong></br>
+      - Configuration de Doctrine sur <strong>PHP/Symfony</strong></br>
+      - Partie de l'interface du site <strong>(HTML/CSS/Twig/Bootstrap)</strong>
+
     </TimeLineElement>
   </div>
+
+  </br>
+  <div class="divider my-0"></div>
+  </br>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Diplômes et formations</div>
   </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="BUT Informatique"
+      h4="[2021] à [2024] à [IUT Paul Sabatier], [Toulouse]"
+    />
+    <TimeLineElement
+      title="DUT Informatique"
+      h4="[2021] à [2023] à [IUT Paul Sabatier], [Toulouse]"
+    />
+    <TimeLineElement
+      title="Formation developpeuse web - Titre RNCP de niveau III"
+      h4="[2019] à [La Piscine], [Bordeaux]"
+    />
+    <TimeLineElement
+      title="Bac scientifique"
+      h4="[2014] à [2018], au [Lycée Jean Condorcet], [Bordeaux]"
+    />
+  </div>
+  
+  </br>
+  <div class="divider my-0"></div>
+  </br>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Compétences techniques</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Maquetter une application</li></br>
+    <li>Réaliser une interface utilisateur web statique et adaptable</li>
+    <li>Développer une interface utilisateur web dynamique</li>
+    <li>Créer une base de données / Développer les composants d’accès aux données</li>  
+  </ul>
+  
+  </br>
+  <div class="divider my-0"></div>
+  </br>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Savoir être</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Créative</li>
+    <li>Organisée</li>
+    <li>Autonome</li>
+    <li>Responsable</li>
+    <li>Polyvalente</li>
+    <li>Entraides</li>
+    <li>Esprit d'initiative</li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
+  </br>
+  <div class="divider my-0"></div>
+  </br>
 
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Centre d'intérêt</div>
+  </div>
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Basket en club </br>| 10 ans</li>
+    <li>Arbitre de basket </br>| 1 an</li>
+    <li>Badminton en club </br>| 4 ans</li>
+    <li>Nouvelles technologies</li>
+    <li>Jeu de logique / réflexion</li> 
   </ul>
 </BaseLayout>

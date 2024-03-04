@@ -22,16 +22,25 @@ const { sideBarActiveItemID } = Astro.props;
   <HorizontalCard
     title="Réaliser"
     img="/Realiser_niveau1.png"
-    desc=""
-    badge="NEW"
+    ul={[
+    "- AC1 1.01 | Implémenter des conceptions simples.",
+    "- AC1 1.0 2 | Élaborer des conceptions simples.",
+    "- AC1 1.0 3 | Faire des essais et évaluer leurs résultats en regard des spécifications.",
+    "- AC1 1.0 4 | Développer des interfaces utilisateurs."
+    ]}
+    badge="SAE"
     url="#"
   />
   <HorizontalCard
     title="Réaliser"
     img="/Realiser_niveau2.png"
-    desc="-Implémenter des conceptions simples.- Élaborer des conceptions simples. - Faire des essais et évaluer leurs résultats en regard des spécifications. - Développer des interfaces utilisateurs."
-
-    badge="NEW"
+    ul={[
+    "- AC2 1.0 1 | Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences.",
+    "- AC2 1.0 2 | Appliquer des principes d’accessibilité et d’ergonomie.",
+    "- AC2 1.0 3 | Adopter de bonnes pratiques de conception et de programmation.",
+    "- AC2 1.0 4 | Vérifier et valider la qualité de l’application par les tests."
+    ]}
+    badge="SAE"
     url="#"
   />
 
@@ -40,19 +49,19 @@ const { sideBarActiveItemID } = Astro.props;
   <HorizontalCard
     title="Optimiser"
     img="/Optimiser.png"
-    desc="Appréhender et construire des algorithmes"
+    desc="Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d’exécution, précision, consommation de ressources."
     url="#"
   />
   <HorizontalCard
     title="Optimiser"
     img="/Optimiser_niveau1.png"
-    desc="Appréhender et construire des algorithmes"
+    desc="AC1 2.0 1 | Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données). AC1 2.0 2 | Comparer des algorithmes pour des problèmes classiques (tris simples, recherche). AC1 2.0 3 | Formaliser et mettre en œuvre des outils mathématiques pour l’informatique"
     url="#"
   />
   <HorizontalCard
     title="Optimiser"
     img="/Optimiser_niveau2.png"
-    desc="Appréhender et construire des algorithmes"
+    desc="AC2 2.0 1 | Choisir des structures de données complexes adaptées au problème. AC2 2.0 2 | Utiliser des techniques algorithmiques adaptées pour des problèmes complexes (par ex. recherche opérationnelle, méthodes arborescentes, optimisation globale, intelligence artificielle). AC2 2.0 3 | Comprendre les enjeux et moyens de sécurisation des données et du code. AC2 2.0 4 | Évaluer l’impact environnemental et sociétal des solutions proposées"
     url="#"
   />
 
